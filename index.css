@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 main {
-  background: #ddd url(/img/ironman.jpg) no-repeat right center;
+  background: #ddd url(./img/ironman.jpg) no-repeat right center;
   background-size: cover;
   width: 100%;
   height: 100vh;
