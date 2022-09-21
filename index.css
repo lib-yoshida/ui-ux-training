@@ -1,49 +1,140 @@
 @charset "UTF-8";
+@media screen and (min-width: 1024px) {
+  main {
+    background: #ddd url(./img/ironman.jpg) no-repeat right center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    user-select: none;
+  }
 
-main {
-  background: #ddd url(./img/ironman.jpg) no-repeat right center;
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-  align-items: center;
-  user-select: none;
+  header {
+    padding: 50px 80px 0 80px;
+    font-size: 5rem;
+    text-shadow: 5px 5px 5px gray;
+    color: white;
+    font-weight: bold;
+  }
+
+  header p {
+    background-color: rgba(0, 0, 0, 0.5);
+    max-width: 700px;
+    border-radius: 5px;
+  }
+
+  .container {
+    padding: 60px 60px 0 60px;
+    color: black;
+    overflow: hidden;
+    max-height: 500px;
+    height: 100%;
+    display: flex;
+  }
+
+  .contentWrapper {
+    background-color: rgba(255, 255, 255, 0.5);
+    max-width: 800px;
+    max-height: 600px;
+    list-style: none;
+    padding: 20px 10px 10px 10px;
+    overflow: hidden;
+  }
+
+  .closeRadius {
+    border-radius: 5px;
+  }
+  .openRadius {
+    border-top-left-radius: 8px;
+    -webkit-border-top-left-radius: 8px;
+    -moz-border-radius-topleft: 8px;
+    border-bottom-left-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -moz-border-radius-bottomleft: 8px;
+  }
+
+  .w-100 {
+    width: 100%;
+  }
+
+  .content {
+    border-radius: 5px;
+    margin: 0 10px 10px 10px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    overflow: hidden;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .content:hover {
+    background-color: rgba(0, 0, 0, 1);
+  }
+
+  .content2 {
+    border-radius: 5px;
+    margin: 0 10px 20px 50px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    overflow: hidden;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .rightContent {
+    max-width: 700px;
+    width: 100%;
+    max-height: 600px;
+    padding: 20px 20px 0 20px;
+    overflow: auto;
+    color: white;
+    background-color: rgba(104, 97, 97, 0.8);
+    border-top-right-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -moz-border-radius-topright: 8px;
+    border-bottom-right-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+    -moz-border-radius-bottomright: 8px;
+  }
+
+  .r-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 15px 0 20px 0;
+  }
+
+  .r-row {
+    margin-left: 20px;
+    line-height: 25px;
+    font-size: 1rem;
+  }
+
+  .margin {
+    padding: 10px;
+    background-color: gray;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .mb-10 {
+    margin-bottom: 10px;
+  }
+  .mt-30 {
+    margin-top: 30px;
+  }
 }
 
-header {
-  padding: 50px 80px 0 80px;
-  font-size: 5rem;
-  text-shadow: 5px 5px 5px gray;
-  color: white;
+@media (min-width: 668px) and (max-width: 1023px) {
 }
 
-header p {
-  background-color: rgba(0, 0, 0, 0.5);
-  max-width: 700px;
-  border-radius: 5px;
+@media (min-width: 375px) and (max-width: 667px) {
 }
 
-.container {
-  padding: 50px 80px 0 80px;
-  color: black;
-}
-
-.contentWrapper {
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 5px;
-  max-width: 950px;
-  height: 600px;
-  list-style: none;
-  padding: 20px 10px 10px 10px;
-}
-
-.content {
-  border-radius: 5px;
-  margin: 0 10px 10px 10px;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-}
-
-.content:hover {
-  background-color: rgba(0, 0, 0, 1);
+@media (max-width: 374px) {
 }
