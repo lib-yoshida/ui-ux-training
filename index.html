@@ -14,41 +14,121 @@
 
     <link rel="stylesheet" type="text/css" href="reset.css" />
     <link rel="stylesheet" type="text/css" href="index.css" />
-    <script src="js/index.js"></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <main>
-      <header><p>Keigo Yoshida</p></header>
+      <header>
+        <p>Keigo Yoshida</p>
+      </header>
       <div class="container">
-        <ul class="contentWrapper">
-          <li class="content">
+        <ul class="contentWrapper w-100 closeRadius" id="wrapper">
+          <li class="content" onclick="onClickRow(1)">
             <p>自分がこれまで何をしてきた人なのか</p>
           </li>
-          <li class="content">
+          <li class="content2 hidden" id="row1" onclick="onClickSecondRow(1)">
+            <p class="margin mb-10">・インフラ運用/保守</p>
+            <p class="margin mb-10">・SES</p>
+            <p class="margin">・LiB</p>
+          </li>
+          <li class="content" onclick="onClickRow(2)">
             <p>どういう能力・スキル・考え方を持っているか</p>
           </li>
-          <li class="content">
+          <li class="content2 hidden" id="row2" onclick="onClickSecondRow(2)">
+            <p class="margin mb-10">・能力</p>
+            <p class="margin mb-10">・スキル</p>
+            <p class="margin">・考え方</p>
+          </li>
+          <li class="content" onclick="onClickRow(3)">
             <p>これからどういうことをしていきたいか</p>
           </li>
-          <li class="content">
-            <p>これからどういうことをしていきたいか</p>
-          </li>
-          <li class="content">
-            <p>これからどういうことをしていきたいか</p>
-          </li>
-          <li class="content">
-            <p>これからどういうことをしていきたいか</p>
-          </li>
-          <li class="content">
-            <p>これからどういうことをしていきたいか</p>
-          </li>
-          <li class="content">
-            <p>これからどういうことをしていきたいか</p>
-          </li>
-          <li class="content">
-            <p>これからどういうことをしていきたいか</p>
+          <li class="content2 hidden" id="row3" onclick="onClickSecondRow(3)">
+            <p class="margin mb-10">・フロントごりごり</p>
+            <p class="margin mb-10">・マネジメント？</p>
+            <p class="margin">・とにかく誰かの助けになりたい</p>
           </li>
         </ul>
+        <div class="rightContent hidden" id="r-content1">
+          <div class="r-title">
+            <p>【インフラ運用 / 保守】 : 5years</p>
+          </div>
+          <div class="r-row">
+            <p>みずほ銀行子会社(旧 みずほオペレーションサービス株式会社)</p>
+            <p>障害対応、運用受入、改善</p>
+            <p>
+              オンプレ環境、データセンターにて勘定系システムの運用/保守/監視業務
+            </p>
+            <p>ルーチンワーク自動化でpowershell、excelを触る程度</p>
+          </div>
+          <div class="r-title mt-30">
+            <p>【SES】 : 2years</p>
+          </div>
+          <div class="r-row">
+            <p>株式会社Carecon</p>
+            <p>友達経由の紹介で、開発実質未経験から入社</p>
+            <p>広告代理店、東進(受託)、学研(SI)にて従事</p>
+            <p>初年度はやらかし祭り、ボコボコにされました</p>
+          </div>
+          <div class="r-title mt-30">
+            <p>【現在】 : 6months</p>
+          </div>
+          <div class="r-row">
+            <p>株式会社リブ・コンサルティング</p>
+            <p>みなまで言わぬ</p>
+          </div>
+        </div>
+        <div class="rightContent hidden" id="r-content2">
+          <div class="r-title">
+            <p>【能力】</p>
+          </div>
+          <div class="r-row">
+            <p>・自分で言うのもなんですが、人当たりはいいと思います。</p>
+            <p>・割とネガティブなことにも向かっていけます。ストレス溜めにくいです。</p>
+            <p>・VS小学生</p>
+          </div>
+          <div class="r-title mt-30">
+            <p>【スキル】</p>
+          </div>
+          <div class="r-row">
+            <p>・js (React, JQuery)</p>
+            <p>・php(cakePHP)</p>
+            <p>・powershell？</p>
+          </div>
+          <div class="r-title mt-30">
+            <p>【考え方】</p>
+          </div>
+          <div class="r-row">
+            <p>（o）何事にも感謝の精神</p>
+            <p>（o）人の結果だけでなくプロセス/考え方もみる</p>
+            <p>（o）新しいもの好き</p>
+            <p>（x）どうにかなる/怒られてから直せばいいや</p>
+          </div>
+        </div>
+        <div class="rightContent hidden" id="r-content3">
+          <div class="r-title">
+            <p>【フロントごりごり】</p>
+          </div>
+          <div class="r-row">
+            <p>・コンポーネント設計/実装力を上げたい</p>
+            <p>・config周りやライブラリ知識を拡充したい</p>
+            <p>・てらしーさんになりたい</p>
+          </div>
+          <div class="r-title mt-30">
+            <p>【マネジメント？】</p>
+          </div>
+          <div class="r-row">
+            <p>・対 己。まずは自分の。事務周り、定型業務苦手すぎる</p>
+            <p>・対 プロジェクト。シンプルにいずれはやってみたい。</p>
+            <p>・対 人。同上。</p>
+          </div>
+          <div class="r-title mt-30">
+            <p>【とにかく誰かの助けになりたい】</p>
+          </div>
+          <div class="r-row">
+            <p>・自分なんかの助力で何かが前に進むって素敵やん。</p>
+            <p>・対クライアント、エンド、同僚 問いません。</p>
+          </div>
+        </div>
       </div>
     </main>
   </body>
