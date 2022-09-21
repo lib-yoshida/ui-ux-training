@@ -1,2 +1,2 @@
-# ui-ux-training
+# githubPages
 https://lib-yoshida.github.io/ui-ux-training/

@@ -1,17 +1,31 @@
 @charset "UTF-8";
-@media screen and (min-width: 1024px) {
-  main {
-    background: #ddd url(./img/ironman.jpg) no-repeat right center;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    align-items: center;
-    user-select: none;
-  }
+main {
+  width: 100%;
+  align-items: center;
+  user-select: none;
+  overflow-y: auto;
+}
 
+.hidden {
+  display: none;
+}
+
+.content {
+  border-radius: 5px;
+  margin: 0 10px 10px 10px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  filter: drop-shadow(4px 4px 4px black);
+}
+.contentWrapper {
+  list-style: none;
+}
+
+@media screen and (min-width: 1024px) {
   header {
-    padding: 50px 80px 0 80px;
-    font-size: 5rem;
     text-shadow: 5px 5px 5px gray;
     color: white;
     font-weight: bold;
@@ -23,6 +37,33 @@
     border-radius: 5px;
   }
 
+  .containerSp {
+    display: none;
+  }
+  main {
+    background: #ddd url(./img/ironman.jpg) no-repeat right center;
+    background-size: cover;
+    height: 100vh;
+  }
+  header {
+    padding: 50px 80px 0 80px;
+    font-size: 5rem;
+  }
+  .margin {
+    padding: 10px;
+    background-color: gray;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .mb-10 {
+    margin-bottom: 10px;
+  }
+
+  .mt-30 {
+    margin-top: 30px;
+  }
+
   .container {
     padding: 60px 60px 0 60px;
     color: black;
@@ -30,13 +71,13 @@
     max-height: 500px;
     height: 100%;
     display: flex;
+    filter: drop-shadow(4px 4px 4px black);
   }
 
   .contentWrapper {
     background-color: rgba(255, 255, 255, 0.5);
     max-width: 800px;
     max-height: 600px;
-    list-style: none;
     padding: 20px 10px 10px 10px;
     overflow: hidden;
   }
@@ -57,17 +98,6 @@
     width: 100%;
   }
 
-  .content {
-    border-radius: 5px;
-    margin: 0 10px 10px 10px;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    overflow: hidden;
-    cursor: pointer;
-    font-weight: bold;
-  }
-
   .content:hover {
     background-color: rgba(0, 0, 0, 1);
   }
@@ -83,15 +113,11 @@
     font-weight: bold;
   }
 
-  .hidden {
-    display: none;
-  }
-
   .rightContent {
     max-width: 700px;
     width: 100%;
     max-height: 600px;
-    padding: 20px 20px 0 20px;
+    padding: 20px;
     overflow: auto;
     color: white;
     background-color: rgba(104, 97, 97, 0.8);
@@ -114,27 +140,144 @@
     line-height: 25px;
     font-size: 1rem;
   }
+}
+.r-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 15px 0 20px 0;
+}
 
-  .margin {
-    padding: 10px;
-    background-color: gray;
-    align-items: center;
-    border-radius: 5px;
-  }
-
-  .mb-10 {
-    margin-bottom: 10px;
-  }
-  .mt-30 {
-    margin-top: 30px;
-  }
+.r-row {
+  margin-left: 20px;
+  line-height: 25px;
+  font-size: 1rem;
 }
 
 @media (min-width: 668px) and (max-width: 1023px) {
-}
+  .container {
+    display: none;
+  }
+  header {
+    text-shadow: 5px 5px 5px gray;
+    color: white;
+    font-weight: bold;
+    padding: 30px 0 0 0;
+    font-size: 2rem;
+    filter: drop-shadow(4px 4px 4px black);
+    display: flex;
+    justify-content: center;
+  }
 
-@media (min-width: 375px) and (max-width: 667px) {
-}
+  header p {
+    display: inline-block;
+    border-radius: 5px;
+  }
 
+  main {
+    background: #ddd url(./img/ironman_sp.png) no-repeat top center;
+    background-size: cover;
+    height: 100%;
+    min-height: 100vh;
+  }
+
+  .containerSp {
+    display: block;
+    color: white;
+    margin: 120px 0 0 0;
+    padding-bottom: 20px;
+    filter: drop-shadow(1px 1px 1px gray);
+  }
+  .content {
+    padding: 20px 0 20px 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .content:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+  }
+
+  .contentSp2 {
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .rightContent {
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 20px 40px;
+    padding: 10px 20px 20px 20px;
+    border-radius: 5px;
+  }
+}
+@media (max-width: 667px) {
+  .container {
+    display: none;
+  }
+
+  header {
+    text-shadow: 5px 5px 5px gray;
+    color: white;
+    font-weight: bold;
+    padding: 30px 0 0 0;
+    font-size: 2rem;
+    filter: drop-shadow(4px 4px 4px black);
+    display: flex;
+    justify-content: center;
+  }
+
+  header p {
+    display: inline-block;
+    border-radius: 5px;
+  }
+
+  main {
+    background: #ddd url(./img/ironman_sp.png) no-repeat top center;
+    background-size: cover;
+    height: 100%;
+    min-height: 100vh;
+  }
+
+  .containerSp {
+    display: block;
+    color: white;
+    margin: 120px 0 0 0;
+    padding-bottom: 20px;
+    filter: drop-shadow(1px 1px 1px gray);
+  }
+  .content {
+    padding: 20px 0 20px 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 0.8rem;
+  }
+
+  .content:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+  }
+
+  .contentSp2 {
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .rightContent {
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 20px 10px;
+    padding: 10px 20px 20px 20px;
+    border-radius: 5px;
+  }
+  .r-title {
+    font-size: 0.8rem;
+  }
+  .r-row {
+    font-size: 0.6rem;
+  }
+}
 @media (max-width: 374px) {
 }
